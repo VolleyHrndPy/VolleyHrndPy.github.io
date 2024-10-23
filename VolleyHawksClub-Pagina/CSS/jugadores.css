@@ -1,0 +1,318 @@
+/* GENERALES */
+
+body {
+  font-family: 'Oswald', sans-serif;
+  margin: 0;
+  background-color: #f5f5f5;
+}
+
+a {
+  color: #1d2129;
+  text-decoration: none;
+}
+
+.jugador-details {
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.squad-player-container {
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+    background-color: #ffffff;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.player-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+.upper-player-info-container {
+    margin-top: 15px;
+}
+
+.player-nickname, .player-name {
+    text-transform: uppercase;
+}
+
+.player-nickname {
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    color: #3c1c93;
+    font-size: 20px;
+}
+
+.player-name {
+    font-weight: normal;
+    letter-spacing: 1.5px;
+    color: #353744;
+    font-size: 16px;
+}
+
+.player-position {
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    color: #CA0835;
+    font-size: 12px;
+}
+
+.stats-player-icon {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.kda-container {
+    font-size: 12px;
+    color: #353744;
+}
+
+/* ENCABEZADO */
+
+header {
+  display: flex;
+  justify-content: space-between;  
+  align-items: center;
+  padding: 10px 10px;
+  background-color: #1d2129;
+}
+
+header #logo img {  
+  width: 90px;
+  height: auto;
+  margin-left: 70px
+}
+
+/**/
+
+
+
+/* MENÚ */
+
+header nav {
+  background-color: transparent;
+  
+  font-size: 18px;
+  font-weight: bold;  
+  
+  margin-right: 40px;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex; 
+  align-items: center;
+}
+
+nav li {
+  margin: 0 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+nav a {
+  color: #fff; 
+}
+
+nav a:hover {
+  color: #e42424;
+}
+
+/* ENCABEZADO DOS */
+
+.main-content .row {
+  margin-left: 0;
+  margin-right: 0;
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.team-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  min-height: 254px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+img {
+  border-style: none;
+}
+
+img {
+  vertical-align: middle;
+  border-style: none;
+}
+
+
+
+.image-container img {
+  max-width: 173px;
+  max-height: 173px;
+}
+
+.image-container {
+  margin-top: 10px;
+  margin-right: 0px;
+}
+
+.image-container {
+  align-items: center;
+  margin-right: 30px;
+}
+
+.image-container, .team-summary-container {
+  display: flex;
+  justify-content: center;
+}
+
+.text-center {
+  text-align: center!important;
+}
+
+.team-name {
+  color: #fff;
+  font-weight: 900;
+  font-size: 39px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+
+/* PIE DE PÁGINA */
+
+.pie-pagina{
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(0, 0, 0);
+}
+
+.pie-pagina .grupo-1 {
+  width: 95%;
+  max-width: 1500px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+  padding: 14px 34px;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.pie-pagina .grupo-1 .box figure{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pie-pagina .grupo-1 .box figure img{
+  width: 350px;
+}
+
+.pie-pagina .grupo-1 .box h2{
+  color: #fff;
+  margin-bottom: 25px;
+  font-size: 25px;
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+.pie-pagina .grupo-1 .box p{
+  color: #efefef;
+  margin-bottom: 10px;
+  font-size: 15px;
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+.pie-pagina .grupo-1 .redes-sociales a{
+  display: inline-block;
+  text-decoration: none;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  color: #000000;
+  margin-right: 10px;
+  background-color: #ffffff;
+  text-align: center;
+  transition: 300ml ease;
+}
+
+.pie-pagina .grupo-1 .redes-sociales a:hover{
+  color: rgb(255, 0, 0);
+}
+
+.pie-pagina .grupo-2{
+  background-color: rgb(0, 0, 0);
+  padding: 15px 10px;
+  text-align: center;
+  color: #fff;
+}
+
+.pie-pagina .grupo-2 small{
+  font-family: 'Roboto Mono', monospace;
+  font-size: 13px;
+}
+@media screen and (max-width:800px){
+  .pie-pagina .grupo-1{
+      width: 90%;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 30px;
+      padding: 35px 0px;
+  }   
+}
+
+.redes {
+  width: 80px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.redes a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+  transition: all 0.3s ease-in-out;
+}
+
+.redes a svg {
+  width: 30px;
+  fill: #ffffff;
+}
+
+.redes .discord {
+  background-color: rgb(0, 60, 255);
+}
+
+.redes .github {
+  background-color: rgb(24, 22, 22);
+}
+
+.redes .twitter {
+  background-color: #33BBFF;
+}
+
+.redes .instagram {
+  background: linear-gradient(45deg, #833AB4, #FD1D1D, #F56040);
+}
+
+.redes a:hover {
+  width: 90px;
+}
